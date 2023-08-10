@@ -1,0 +1,19 @@
+ <script>var shopName = "{{shop.permanent_domain}}"</script> 
+ <script>if (!localStorage.getItem("shop-name")) {localStorage.setItem("shop-name", shopName );}</script> 
+ <script src="https://unpkg.com/axios/dist/axios.min.js" defer></script> 
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/rrweb@latest/dist/rrweb.min.css"/> 
+ <script src="https://cdn.jsdelivr.net/npm/rrweb@latest/dist/rrweb.min.js" defer></script> 
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/rrweb-player@latest/dist/style.css"/> 
+ <script src="https://cdn.jsdelivr.net/npm/rrweb-player@latest/dist/index.js" defer> </script> 
+ <script src="{{ "getData.js" | asset_url }}" defer="defer"></script> 
+ {{"heatmap.css" | asset_url | stylesheet_tag}} 
+ <script src="{{ "heatmapper.js" | asset_url }}" defer></script> 
+ <script defer>setTimeout(function(){generateCoordMap();}, 3000);</script> 
+
+ {% schema %}
+{
+  "name": "Heatmap Script",
+  "target": "head",
+  "settings": []
+}
+{% endschema %}

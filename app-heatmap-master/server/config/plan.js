@@ -1,0 +1,51 @@
+const plans = {
+  "Free Plan": {
+    name: "Free Plan",
+    price: 0,
+    max_page_views: 500,
+    max_days_retention: 30,
+    description: "500 Monthly page views, 30 days Data retention",
+    features: ["500 Page Views", "30 Days Data Retention"],
+  },
+  "Basic Plan": {
+    name: "Basic Plan",
+    price: 5,
+    max_page_views: 10000,
+    max_days_retention: 30,
+    description: "10k Monthly page views, 30 days Data retention",
+    features: ["10000 Page Views", "30 Days Data Retention"],
+  },
+  "Pro Plan": {
+    name: "Pro Plan",
+    price: 11,
+    max_page_views: 25000,
+    max_days_retention: 45,
+    description: "25k Monthly page views, 45 days Data retention",
+    features: ["25k Monthly page views", "45 days Data retention"],
+  },
+  "Advanced Plan": {
+    name: "Advanced Plan",
+    price: 29,
+    max_page_views: 75000,
+    max_days_retention: 60,
+    description: "75k Monthly page views, 60 days Data retention",
+    features: ["Lorem ipsum", "Lorem ipsum"],
+  },
+  "Vip Plan": {
+    name: "Vip Plan",
+    price: 51,
+    max_page_views: 200000,
+    max_days_retention: 60,
+    description: "200k Monthly page views, 60 days Data retention",
+    features: ["Lorem ipsum", "Lorem ipsum"],
+  },
+  "Royal Plan": {
+    name: "Royal Plan",
+    price: 99,
+    max_page_views: 500000,
+    max_days_retention: 90,
+    description: "500k Monthly page views, 90 days Data retention ",
+    features: ["Lorem ipsum", "Lorem ipsum"],
+  },
+};
+export default plans;

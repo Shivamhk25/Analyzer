@@ -1,0 +1,15 @@
+.rr-controller__btns button:last-child {
+  display: none !important;
+}
+/* #player {
+  height: 100% !important;
+  width: 100% !important;
+}
+.rr-player {
+  height: 100% !important;
+  width: 100% !important;
+}
+.rr-player__frame {
+  width: 100% !important;
+  height: calc(100% - 100px);
+} */
